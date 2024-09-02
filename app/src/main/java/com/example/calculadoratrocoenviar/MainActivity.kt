@@ -33,8 +33,8 @@ class MainActivity : AppCompatActivity() {
     }
     private fun enviar(valoPago: Float, valorTotal: Float){
         val intent = Intent("com.exemplo.TRANSACAO_CONCLUIDA")
-        intent.putExtra("valor_pago", 100.0)
-        intent.putExtra("valor_total", 75.0)
+        intent.putExtra("valor_pago", valoPago)
+        intent.putExtra("valor_total", valorTotal)
         sendBroadcast(intent)
     }
 }
